@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "MacBook Air",
+      "price": 900,
+      "year": 2020,
+      "image": "https://picsum.photos/300/300",
+      "configure": {
+        "chip": "M1",
+        "SSD": "256 Gb",
+        "memory": "8 Gb",
+        "display": "Retina"
+      }
+    },
+    {
+      "id": 2,
+      "title": "MacBook",
+      "price": 1500,
+      "year": 2023,
+      "image": "https://picsum.photos/300/300",
+      "configure": {
+        "chip": "M2",
+        "SSD": "512 Gb",
+        "memory": "16 Gb",
+        "display": "Retina"
+      }
+    },
+    {
+      "id": 3,
+      "title": "MacBook Pro",
+      "price": 1900,
+      "year": 2022,
+      "image": "https://picsum.photos/300/300",
+      "configure": {
+        "chip": "M2",
+        "SSD": "1 Tb",
+        "memory": "32 Gb",
+        "display": "Retina"
+      }
+    },
+    {
+      "id": 4,
+      "title": "asdas",
+      "price": "1200",
+      "year": "",
+      "image": "https://picsum.photos/300/300",
+      "configure": {
+        "chip": "",
+        "SSD": "",
+        "memory": "",
+        "display": ""
+      }
+    }
+  ],
+  "basket": [
+    {
+      "id": 3,
+      "title": "MacBook Pro",
+      "price": 1900,
+      "year": 2022,
+      "image": "https://picsum.photos/300/300",
+      "configure": {
+        "chip": "M2",
+        "SSD": "1 Tb",
+        "memory": "32 Gb",
+        "display": "Retina"
+      },
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "title": "MacBook",
+      "price": 1500,
+      "year": 2023,
+      "image": "https://picsum.photos/300/300",
+      "configure": {
+        "chip": "M2",
+        "SSD": "512 Gb",
+        "memory": "16 Gb",
+        "display": "Retina"
+      },
+      "quantity": 2
+    }
+  ]
+}

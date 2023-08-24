@@ -1,0 +1,34 @@
+<div class="container">
+  <mat-card class="example-card" *ngFor="let item of basket">
+    <mat-card-title>{{ item.title }}</mat-card-title>
+    <img class="img" mat-card-image src="{{ item.image }}" />
+    <mat-card-content>
+      <p>This card indeterminates progress bar.</p>
+      <p>Price: {{ item.price | currency }}</p>
+      <p>Year: {{ item.year }}</p>
+      <p>Chip: {{ item.configure.chip }}</p>
+      <p>SSD: {{ item.configure.SSD }}</p>
+      <p>Display: {{ item.configure.display }}</p>
+      <p>Memory: {{ item.configure.memory }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        class="button"
+        mat-flat-button
+        color="primary"
+        (click)="minusItemFromBasket(item)"
+      >
+        -
+      </button>
+      <p>Quantity: {{ item.quantity }}</p>
+      <button
+        class="button"
+        mat-flat-button
+        color="primary"
+        (click)="plusItemFromBasket(item)"
+      >
+        +
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

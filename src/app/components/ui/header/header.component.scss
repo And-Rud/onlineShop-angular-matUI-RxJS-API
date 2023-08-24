@@ -1,0 +1,23 @@
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  &.button {
+    margin-left: 5px;
+    background-color: cornflowerblue;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.no-select {
+  cursor: pointer;
+  user-select: none;
+}

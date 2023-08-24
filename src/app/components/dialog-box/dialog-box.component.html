@@ -1,0 +1,51 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title" appearance="fill" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price" appearance="fill" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Year</mat-label>
+    <input matInput formControlName="year" appearance="fill" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Chip</mat-label>
+    <input matInput formControlName="chip" appearance="fill" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>SSD</mat-label>
+    <input matInput formControlName="SSD" appearance="fill" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Memory</mat-label>
+    <input matInput formControlName="memory" appearance="fill" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Display</mat-label>
+    <input matInput formControlName="display" appearance="fill" />
+  </mat-form-field>
+
+  <button
+    class="button"
+    mat-flat-button
+    routerLink="products"
+    color="primary"
+    style="margin-right: 3px"
+    type="submit"
+  >
+    {{ isNew ? "Add product" : "Refresh" }}
+  </button>
+  <button
+    class="button"
+    mat-flat-button
+    routerLink="products"
+    color="primary"
+    (click)="onNoClick()"
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
